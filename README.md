@@ -56,3 +56,21 @@ Source: https://github.com/PolyAI-LDN/task-specific-datasets
 - Similar or ambiguous categories can be confused.
 - Always predicts one of the 77 categories, even for unrelated messages.
 - Does not yet include an API or user interface.
+
+## Command-line prediction
+
+Run `ticket_classifier.ipynb` first to train and save the model.
+The generated model file is excluded from Git.
+
+Using the Python environment where you installed the requirements:
+
+```bash
+python predict.py "My card has not arrived yet"
+```
+
+Expected output:
+
+```text
+Message: My card has not arrived yet
+Predicted category: card_arrival
+```
