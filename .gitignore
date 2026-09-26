@@ -1,0 +1,15 @@
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Python cache and local environments
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Local secrets and macOS files
+.env
+.DS_Store
+
+# Generated model files
+models/
